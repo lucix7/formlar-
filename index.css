@@ -1,0 +1,52 @@
+table, th, td {
+    border: 1px groove black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.BIO {
+    background-color: rgb(114, 197, 114);
+}
+.NEJ {
+    background-color: rgb(227, 235, 124);
+}
+.MAT {
+    background-color: rgb(143, 150, 255);
+}
+.DEJ {
+    background-color: rgb(253, 182, 88);
+}
+.LIT {
+    background-color: rgb(237, 214, 253);
+}
+.ANJ {
+    background-color: rgb(242, 190, 255);
+}
+.CHE {
+    background-color: rgb(140, 227, 229);
+}
+.GEO {
+    background-color: rgb(179, 117, 93);
+}
+.SJL {
+    background-color: rgb(233, 163, 229);
+}
+.SEI {
+    background-color: rgb(104, 228, 176);
+}
+.TSV {
+    background-color: rgb(255, 150, 101);
+}
+.FYZ {
+    background-color: rgb(214, 185, 103);
+}
+.OBN {
+    background-color: rgb(252, 160, 176);
+}
+.SEM {
+    background-color: rgb(145, 207, 189);
+}
+.INF {
+    background-color: rgb(131, 136, 131);
+}
