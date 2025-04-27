@@ -1,5 +1,5 @@
 a:link {
-  color: green;
+  color: pink;
   background-color: transparent;
   text-decoration: none;
 }
@@ -14,10 +14,11 @@ a:hover {
   text-decoration: underline;
 }
 a:active {
-  color: yellow;
+  color: pink;
   background-color: transparent;
   text-decoration: underline;
 }
+
 * {box-sizing: border-box}
 
 /* Set height of body and the document to 100% */
