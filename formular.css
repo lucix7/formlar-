@@ -1,17 +1,3 @@
-.tabcontent {
-  display: none;
-  text-align: center;
-  padding: 100px 20px;
-  height: 100%;
-  color: rgb(75, 75, 75);
-}
-
-.form-container {
-  width: 400px;
-  margin: 0 auto;
-  display: inline-block;
-}
-/* Štýly pre odkazy */
 a:link {
   color: pink;
   background-color: transparent;
@@ -76,8 +62,17 @@ body, html {
   padding: 100px 20px;
   height: 100%;
   text-align: center; /* Dôležité pre centrovanie obsahu */
+  display: none;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100%;
+  color: rgb(75, 75, 75);
 }
-
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  display: inline-block;
+}
 /* Farby pre jednotlivé sekcie */
 #Domov {
   background-color: rgb(250, 201, 201);
