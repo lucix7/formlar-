@@ -1,74 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <link rel="stylesheet" type="text/css" href="formular.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulár</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-<style>
-</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Štýly pre odkazy */
+        a:link, a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        /* Formulár kontajner */
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            display: inline-block;
+        }
+
+        /* Reset box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Nastavenie tela */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Taby */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Obsah tabu */
+        .tabcontent {
+            display: none;
+            text-align: center;
+            padding: 100px 20px;
+            height: 100%;
+            color: rgb(75, 75, 75);
+        }
+
+        /* Farby pozadia pre jednotlivé sekcie */
+        #Domov {background-color: rgb(250, 201, 201);}
+        #Záľuby {background-color: rgb(186, 230, 186);}
+        #Rozvrh {background-color: rgb(199, 199, 255);}
+        #Kontakt {background-color: rgb(241, 202, 128);}
+    </style>
 </head>
+
 <body style="background-color: rgb(243, 253, 216);">
-    
-<button class="tablink" onclick="openPage('Domov', this, 'red')"> <a href="menu.html">Domov</a></button>
-<button class="tablink" onclick="openPage('Záľuby', this, 'green')">Záľuby</button>
-<button class="tablink" onclick="openPage('Rozvrh', this, 'blue')" ><a href="index.html" target="_self">Rozvrh</a></button>
-<button class="tablink" onclick="openPage('Kontakt', this, 'orange')"><a href="dotaznik.html">Kontakt (formulár)</a></button>
-    
-<div id="Kontakt" class="tabcontent">
-    <div class="form-container">
-    <form>
-        <h style="font-size: 30px;"><b>Kontaktný formulár</b></h><br>
-        <label for="meno"><b>Meno: </b></label><br>
-            <input style="background-color: rgb(177, 214, 247);" type="text" id="meno" name="meno" placeholder="Alfréd"><br>
-        <label for="priezvisko"><b>Priezvisko:</b></label><br>
-            <input style="background-color: rgb(177, 214, 247);" type="text" id="priezvisko" name="priezvisko" placeholder="Strom"><br>
-        <label for="email"><b>Email:</b></label>
-            <div class="input-group mb-3">
-            <input style="background-color: rgb(177, 214, 247);" type="text"  placeholder="používateľské meno" aria-label="používateľské meno">
+
+    <!-- Menu -->
+    <button class="tablink" onclick="openPage('Domov', this, 'red')"> <a href="menu.html">Domov</a></button>
+    <button class="tablink" onclick="openPage('Záľuby', this, 'green')">Záľuby</button>
+    <button class="tablink" onclick="openPage('Rozvrh', this, 'blue')"><a href="index.html">Rozvrh</a></button>
+    <button class="tablink" onclick="openPage('Kontakt', this, 'orange')"><a href="dotaznik.html">Kontakt (formulár)</a></button>
+
+    <!-- Obsah stránky -->
+    <div id="Domov" class="tabcontent">
+      <h2>Domovská stránka</h2>
+      <p>Tu bude obsah Domov.</p>
+    </div>
+
+    <div id="Záľuby" class="tabcontent">
+      <h2>Záľuby</h2>
+      <p>Tu budú tvoje záľuby.</p>
+    </div>
+
+    <div id="Rozvrh" class="tabcontent">
+      <h2>Rozvrh</h2>
+      <p>Tu bude rozvrh hodín.</p>
+    </div>
+
+    <div id="Kontakt" class="tabcontent">
+      <div class="form-container">
+        <form>
+          <h2 style="font-size: 30px;"><b>Kontaktný formulár</b></h2><br>
+
+          <label for="meno"><b>Meno: </b></label><br>
+          <input class="form-control mb-2" style="background-color: rgb(177, 214, 247);" type="text" id="meno" name="meno" placeholder="Alfréd"><br>
+
+          <label for="priezvisko"><b>Priezvisko:</b></label><br>
+          <input class="form-control mb-2" style="background-color: rgb(177, 214, 247);" type="text" id="priezvisko" name="priezvisko" placeholder="Strom"><br>
+
+          <label for="email"><b>Email:</b></label>
+          <div class="input-group mb-3">
+            <input class="form-control" style="background-color: rgb(177, 214, 247);" type="text" placeholder="používateľské meno">
             <span class="input-group-text">@</span>
-            <input style="background-color: rgb(177, 214, 247);" type="text"  placeholder="server" aria-label="server">
-        <p></p>
-        <p><b>Pohlavie: </b></p>
-            <input type="radio" id="muž" name="pohlavie" value="muž">
-                <label for="muž">muž </label>
-            <input type="radio" id="žena" name="pohlavie" value="žena">
-                <label for="žena">žena</label>
-            <input type="radio" id="krtko" name="pohlavie" value="krtko">
-                <label for="krtko">krtko</label>
-            <input type="radio" id="iné" name="pohlavie" value="iné">
-                <label for="iné">iné...</label>
-                <p></p>
-            <input type="checkbox" id="podmienky" name="podmienky" value="podmienky">
-                <label for="podmienky">Súhlasím s podmienkami</label><br>
-                <p></p>
-        <p><b>Priestor na otázky: </b></p>
-            <textarea style="background-color: rgb(177, 214, 247); " name="otazky" rows="8" cols="55"></textarea><br>
-            <button type="button" class="btn btn-outline-" style="background-color: rgb(108, 184, 250);" >Odoslať</button>
-    </form>
-</div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+            <input class="form-control" style="background-color: rgb(177, 214, 247);" type="text" placeholder="server">
+          </div>
 
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
+          <p><b>Pohlavie: </b></p>
+          <input type="radio" id="muž" name="pohlavie" value="muž">
+          <label for="muž">muž</label>
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
+          <input type="radio" id="žena" name="pohlavie" value="žena">
+          <label for="žena">žena</label>
+
+          <input type="radio" id="krtko" name="pohlavie" value="krtko">
+          <label for="krtko">krtko</label>
+
+          <input type="radio" id="iné" name="pohlavie" value="iné">
+          <label for="iné">iné...</label>
+
+          <br><br>
+
+          <input type="checkbox" id="podmienky" name="podmienky" value="podmienky">
+          <label for="podmienky">Súhlasím s podmienkami</label><br><br>
+
+          <label for="otazky"><b>Priestor na otázky: </b></label><br>
+          <textarea class="form-control" style="background-color: rgb(177, 214, 247);" name="otazky" rows="8" cols="55"></textarea><br>
+
+          <button type="submit" class="btn btn-primary mt-3" style="background-color: rgb(108, 184, 250);">Odoslať</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+    </script>
+
 </body>
 </html>
