@@ -16,7 +16,7 @@ a:hover {
 a:active {
   color: pink;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 * {box-sizing: border-box}
