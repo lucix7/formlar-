@@ -1,3 +1,25 @@
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 * {box-sizing: border-box}
 
 /* Set height of body and the document to 100% */
@@ -36,24 +58,3 @@ body, html {
 #Záľuby {background-color: rgb(186, 230, 186);}
 #Rozvrh {background-color: rgb(199, 199, 255);}
 #Kontakt {background-color: rgb(241, 202, 128);}
-
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
