@@ -1,3 +1,43 @@
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(75, 75, 75);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Domov {background-color: rgb(250, 201, 201);}
+#Záľuby {background-color: rgb(186, 230, 186);}
+#Rozvrh {background-color: rgb(199, 199, 255);}
+#Kontakt {background-color: rgb(241, 202, 128);}
+
 table, th, td {
     border: 1px groove black;
     border-radius: 10px;
