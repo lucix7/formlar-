@@ -1,3 +1,16 @@
+.tabcontent {
+  display: none;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100%;
+  color: rgb(75, 75, 75);
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  display: inline-block;
+}
 /* Štýly pre odkazy */
 a:link {
   color: pink;
