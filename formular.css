@@ -26,7 +26,7 @@ a:active {
 /* Základné nastavenia pre body a html */
 body, html {
   height: 100%;
-  margin: 0px;
+  margin: 0;
   font-family: Arial;
 }
 
@@ -56,7 +56,7 @@ body, html {
 }
 
 form {
-  margin-left: 0px;
+  margin-left: 600px;
 }
 #Domov {
   background-color: rgb(250, 201, 201);
