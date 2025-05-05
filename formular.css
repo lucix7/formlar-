@@ -58,6 +58,7 @@ body, html {
 form {
   margin-right: 550px;
   margin-left: 550px;
+  margin-top: 20px;
 }
 #Domov {
   background-color: rgb(250, 201, 201);
