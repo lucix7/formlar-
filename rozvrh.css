@@ -64,8 +64,9 @@ table, th, td {
     border-radius: 10px;
     text-align: center;
 }
-
-
+th {
+  height: 70px;
+}
 .BIO {
     background-color: rgb(114, 197, 114);
 }
