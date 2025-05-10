@@ -58,3 +58,9 @@ body, html {
 #Záľuby {background-color: rgb(186, 230, 186);}
 #Rozvrh {background-color: rgb(199, 199, 255);}
 #Kontakt {background-color: rgb(241, 202, 128);}
+
+header {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(47, 25, 25);
+}
