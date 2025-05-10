@@ -65,10 +65,12 @@ body {
     margin: 0;
   }
 
-  h1 {
+  header {
+    background-color: cornsilk;
+    padding: 1px;
     text-align: center;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 25px;
+    color: rgb(255, 94, 121);
   }
 
   .gallery {
